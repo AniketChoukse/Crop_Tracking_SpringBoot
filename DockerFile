@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8787
+ADD target/CropTracking.jar CropTracking.jar
+ENTRYPOINT ["java","-jar","/CropTracking.jar"]
